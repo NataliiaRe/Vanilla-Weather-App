@@ -17,6 +17,7 @@ ul {
 
 li {
   list-style: none;
+  text-transform: capitalize;
   color: rgb(135, 135, 135);
   font-size: 16px;
   font-weight: 100;
