@@ -58,3 +58,19 @@ search("New York");
 
 let form = document.querySelector("#search-form");
 form.addEventListener("submit", handleSubmit);
+
+// display temperature at the current location
+function showPosition(position) {
+  let latitude = position.coords.latitude;
+  let longitude = position.coords.longitude;
+  let apyKey = "oc8eab0a2081f8atcea9334203aad423";
+  let apiUrlCurrent = `https://api.shecodes.io/weather/v1/current?lon=${longitude}&lat=${latitude}&key=${apyKey}`;
+  axios.get(apiUrlCurrent).then(displayTemperature);
+}
+
+function getCurrentPosition() {
+  navigator.geolocation.getCurrentPosition(showPosition);
+}
+
+let currentLocation = document.querySelector("#current");
+currentLocation.addEventListener("click", getCurrentPosition);

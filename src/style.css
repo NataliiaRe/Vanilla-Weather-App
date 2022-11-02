@@ -58,3 +58,8 @@ li:first-letter {
   font-size: 16px;
   top: -34px;
 }
+
+#current {
+  background-color: rgb(45, 199, 68);
+  border-color: rgb(45, 199, 68);
+}
