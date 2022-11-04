@@ -43,7 +43,7 @@ function displayTemperature(response) {
     `http://shecodes-assets.s3.amazonaws.com/api/weather/icons/${response.data.condition.icon}.png`
   );
   iconUrl.setAttribute("alt", response.data.condition.description);
-  document.getElementById("#city-input").reset();
+  document.getElementById("search-form").reset();
 }
 
 function search(city) {
