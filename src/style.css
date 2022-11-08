@@ -25,6 +25,13 @@ li {
 li:first-letter {
   text-transform: capitalize;
 }
+
+footer {
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  font-size: smaller;
+  opacity: 0.85;
+}
+
 .weather-app-wraper {
   max-width: 600px;
   margin: 30px auto;
